@@ -1,16 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifrn.sc.peoo.atividadeheranca;
 
-/**
- *
- * @author 20201114010042
- */
 public class Teste {
+    
     public static void main(String[] args) {
-        PessoaJuridica pf = new PessoaJuridica();
+        
+        Pessoa p = new Pessoa();
+        PessoaFisica pf = new PessoaFisica();
+        PessoaJuridica pj = new PessoaJuridica(
+                "12.000.458/0001-72", 
+                "388.108.598.269", 
+                "400289-2",
+                "Indústrias Stark",
+                "Rua dos Bobos, Nº 0", 
+                "4002-8922"
+        );
+        
+//        p.setCPF();
+//        p.setCNPJ();
     }
 }

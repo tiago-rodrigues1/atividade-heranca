@@ -1,29 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.edu.ifrn.sc.peoo.atividadeheranca;
 
-/**
- *
- * @author 20201114010042
- */
 public class PessoaJuridica extends Pessoa {
-    private String cnpj;
+    private String CNPJ;
     private String inscrEstadual;
     private String inscrMunicipal;
+
+    public PessoaJuridica(String cnpj, String inscrEstadual, String inscrMunicipal, String nome, String endereco, String telefone) {
+        super(nome, endereco, telefone);
+        this.CNPJ = cnpj;
+        this.inscrEstadual = inscrEstadual;
+        this.inscrMunicipal = inscrMunicipal;
+        
+        System.out.println(this.getClass());
+    }
     
     public PessoaJuridica() {
         System.out.println(this.getClass());
     }
 
-    public String getCnpj() {
-        return cnpj;
+    public String getCNPJ() {
+        return CNPJ;
     }
 
-    public void setCnpj(String cnpj) {
-        this.cnpj = cnpj;
+    public void setCNPJ(String cnpj) {
+        this.CNPJ = cnpj;
     }
 
     public String getInscrEstadual() {
