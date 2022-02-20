@@ -30,19 +30,22 @@ public class Teste {
     }
     
     public static void main(String[] args) {
-        
-        Pessoa p = new Pessoa();
+//      Pessoa p = new Pessoa();
         PessoaFisica pf = new PessoaFisica();
         PessoaJuridica pj = new PessoaJuridica(
                 "12.000.458/0001-72", 
                 "388.108.598.269", 
-                "400289-2",
+                "4002-8922",
                 "Indústrias Stark",
                 "Rua dos Bobos, Nº 0", 
                 "4002-8922"
         );
         
-//        p.setCPF();
-//        p.setCNPJ();
+        pf.setNome("Tiago Rodrigues");
+        pf.setEndereco("Rua das laranjeira, Nº 123");
+        pf.setTelefone("98877-6655");
+        pf.setCPF("123.456.789-00");
+        pf.setRg("123.456.789");
+        pf.setDataNascimento(getDataFormatada("28/06/2004"));
     }
 }
