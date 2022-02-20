@@ -10,7 +10,24 @@
 
 package br.edu.ifrn.sc.peoo.atividadeheranca;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Teste {
+    
+    private static Date getDataFormatada(String data) {
+        Date dataFormatada = new Date();
+        
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+            dataFormatada = sdf.parse(data);
+        } catch (ParseException e) {
+            System.err.println(e);
+        }
+        
+        return dataFormatada;
+    }
     
     public static void main(String[] args) {
         
